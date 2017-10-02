@@ -16,13 +16,7 @@ $this->title = "Hello! ".$model->name;
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->uid], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->uid], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
+       
     </p>
 
     <?= DetailView::widget([
